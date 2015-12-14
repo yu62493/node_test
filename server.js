@@ -9,7 +9,8 @@ function start()
 		response.write("Hello Tiny");
 		response.end();
 	}
-	http.createServer(onRequest).listen(process.env.PORT,process.env.IP);
+;	http.createServer(onRequest).listen(process.env.PORT,process.env.IP);
+	http.createServer(onRequest).listen(8888);
 	console.log("Server has started.");
 }
 
